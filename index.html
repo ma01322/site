@@ -174,7 +174,7 @@
             position: relative;
             margin: 0 auto 25px;
             width: 100%;
-            height: 200px; /* YouTube থাম্বনেইল সাইজ */
+            height: 200px;
             border-radius: 16px;
             overflow: hidden;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
@@ -421,7 +421,7 @@
                 </div>
                 <h2 class="app-title">এক ক্লিক সংস্করণ</h2>
                 <p class="app-description">১ ক্লিকেই নগদ বিকাশের ফেইক পেমেন্ট স্ত্রিনশট তৈরি করুন - সবচেয়ে দ্রুত পদ্ধতি</p>
-                <a href="bkashscreenshot.apk" class="download-btn" download>
+                <a href="https://raw.githubusercontent.com/ma01322/site/main/bkashscreenshot.apk" class="download-btn" download>
                     <i class="fas fa-download"></i> ডাউনলোড করুন
                 </a>
             </div>
@@ -432,7 +432,7 @@
                 </div>
                 <h2 class="app-title">দুই ক্লিক সংস্করণ</h2>
                 <p class="app-description">২ ক্লিকেই নগদ বিকাশের ফেইক পেমেন্ট স্ত্রিনশট তৈরি করুন - আরও কাস্টমাইজেশন অপশন</p>
-                <a href="/bkashscreenshot2.apk" class="download-btn" download>
+                <a href="https://raw.githubusercontent.com/ma01322/site/main/bkashscreenshot2.apk" class="download-btn" download>
                     <i class="fas fa-download"></i> ডাউনলোড করুন
                 </a>
             </div>
@@ -443,7 +443,7 @@
                 </div>
                 <h2 class="app-title">তিন ক্লিক সংস্করণ</h2>
                 <p class="app-description">৩ ক্লিকেই নগদ বিকাশের ফেইক পেমেন্ট স্ত্রিনশট তৈরি করুন - অ্যাডভান্সড ফিচার সহ</p>
-                <a href="/bkashscreenshot3.apk" class="download-btn" download>
+                <a href="https://raw.githubusercontent.com/ma01322/site/main/bkashscreenshot3.apk" class="download-btn" download>
                     <i class="fas fa-download"></i> ডাউনলোড করুন
                 </a>
             </div>
@@ -471,6 +471,7 @@
                         const link = document.createElement('a');
                         link.href = this.getAttribute('href');
                         link.setAttribute('download', '');
+                        link.setAttribute('target', '_blank');
                         document.body.appendChild(link);
                         link.click();
                         document.body.removeChild(link);
